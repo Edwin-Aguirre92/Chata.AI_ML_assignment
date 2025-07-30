@@ -71,7 +71,7 @@ The ML system uses the config.py file found inside the src folder to run the sys
 
 1. **EXCLUDE_NOISE_QUESTIONS** is a boolean variable that has either a true or false value. If true, the ML system filters out questions in which the disfluent text value is '#Value' or 'question n/a'. If false, the ML system uses all questions.
 2. **model_used** is a string variable that tells which model to train on . The system has been tested with the following models :
-"t5-small", and "t5-base".
+"t5-small", "t5-base" and "google/flan-t5-base".
 
 ## Run the ML system 
 
@@ -93,7 +93,7 @@ python main.py
 
 ## Run the tests
 This project uses Python's built-in `unittest` framework.  
-To run all unit tests located in the `test/` folder, execute the following command from the project root(Chata.AI_ML_assignment):
+To run all unit tests located in the `test/` directory, first activate the `hf_env` virtual environment, then execute the following command from the project root(Chata.AI_ML_assignment):
 
 ```bash
 python -m unittest discover -s tests
